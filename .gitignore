@@ -1,9 +1,0 @@
-log/*
-tmp/*
-config/*.yml
-[a-zA-Z0-9\.-_]*~
-public/stylesheets/all.css
-public/javascripts/all.js
-public/assets/*
-.bundle/
-nohup.out
