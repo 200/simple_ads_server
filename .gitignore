@@ -7,4 +7,4 @@ public/javascripts/all.js
 public/assets/*
 .bundle/
 nohup.out
-
+.DS_Store
