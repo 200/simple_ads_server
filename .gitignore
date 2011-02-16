@@ -8,3 +8,4 @@ public/assets/*
 .bundle/
 nohup.out
 .DS_Store
+*.swp
