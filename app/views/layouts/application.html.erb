@@ -2,13 +2,23 @@
 <html>
 <head>
   <title>SimpleAdsServer</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag :all ,'960', 'reset', 'text' %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div id="header">
+    <div class="container_12">
+      <h1 style="margin-bottom:0px;">Simple Ads Server</h1>
+      <p style="margin-top:0px; margin-bottom:3px;">Control your ads with SAS.</p>
+    </div>
+  </div>
 
-<%= yield %>
+  <br>
 
+  <div id="content" class="container_12">
+    <%= yield %>
+  </div>
+  
 </body>
 </html>

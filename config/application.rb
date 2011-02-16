@@ -36,7 +36,7 @@ module SimpleAdsServer
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
-
+    config.secret_token = "2bab0236c31e386fee44d0b9a38503a6"
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
   end

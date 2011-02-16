@@ -1,0 +1,38 @@
+#header {
+  border-bottom: 1px solid brown;
+  background: #FF7373;
+  color: white;
+}
+
+#vtitle {
+  text-align: center;
+}
+
+.vcol {
+  border: 1px solid #FF7373; 
+  border-radius: 8px;
+  padding: 3px 5px 3px 5px;
+  background: #FF7373;
+  min-height: 100px;
+}
+
+#sidebar {
+  border: 2px solid brown;
+  border-radius: 8px;
+  background: brown;
+  color: white;
+  min-height: 600px;
+}
+
+.submenu {
+  border: 2px solid;
+  border-radius: 8px;
+  background: #FF7373;
+  margin: 10px;
+}
+
+.submenu h5 {
+  text-align:center;
+  border-bottom: 1px dotted white;
+}
+
