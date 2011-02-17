@@ -8,13 +8,21 @@
   text-align: center;
 }
 
-.vcol {
-  border: 1px solid #FF7373; 
+
+table .grid_3 {
+  border: 1px solid brown; 
   border-radius: 8px;
-  padding: 3px 5px 3px 5px;
+  padding: 5px 2px 5px 2px;
   background: #FF7373;
   min-height: 100px;
+  margin-left: 0;
 }
+
+table .grid_9 {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
 
 #sidebar {
   border: 2px solid brown;
