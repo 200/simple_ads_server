@@ -4,7 +4,24 @@ require "simple_ads_server/version"
 
 Gem::Specification.new do |s|
   s.add_dependency 'rails', '3.0.3'
+
   s.add_dependency 'haml'
+
+  s.add_dependency "rspec-rails"
+  s.add_dependency "rspec"
+  s.add_dependency "rspec-core"      
+  s.add_dependency "rspec-expectations"
+  s.add_dependency "rspec-mocks"
+  
+  s.add_dependency 'capybara'
+  s.add_dependency 'database_cleaner'
+  s.add_dependency 'cucumber-rails'
+  s.add_dependency 'cucumber'
+  s.add_dependency 'spork'
+  s.add_dependency 'launchy'
+
+  s.add_dependency 'factory_girl_rails'
+
   s.name        = "simple_ads_server"
   s.version     = SimpleAdsServer::VERSION
   s.platform    = Gem::Platform::RUBY
