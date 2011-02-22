@@ -4,6 +4,7 @@ require "simple_ads_server/version"
 
 Gem::Specification.new do |s|
   s.add_dependency 'rails', '3.0.3'
+  s.add_dependency 'haml'
   s.name        = "simple_ads_server"
   s.version     = SimpleAdsServer::VERSION
   s.platform    = Gem::Platform::RUBY
