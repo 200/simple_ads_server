@@ -1,0 +1,74 @@
+#main.alpha.grid_9
+  %div.grid_9#info
+    = link_to '<< Previous day', "/stat/#{@previous_day}"
+    %b= @day 
+    = link_to 'Next day >>', "/stat/#{@next_day}"  
+  %div.grid_9#info Zones and Ads 
+  %div.grid_9{:style => 'margin-left:15px;'}
+    - @stats.each do |stat|
+      %div.grid_3
+        %table
+          %tr
+            %td.index Zone 
+            %td= stat.zone.name
+          %tr
+            %td.index Ad
+            %td= stat.banner.name
+          %tr
+            %td.index Views
+            %td= stat.views
+          %tr
+            %td.index Hits
+            %td= stat.hits
+          %tr
+            %td.index CTR
+            %td
+              = stat.hits / stat.views.to_f * 100
+              = '%'
+          %tr
+            %td.index link to view
+  %div.grid_9#info Zones
+  %div.grid_9{:style => 'margin-left:15px;'}
+    - @stats.each do |stat|
+      %div.grid_3
+        %table
+          %tr
+            %td.index Zone 
+            %td= stat.zone.name
+          %tr
+            %td.index Views
+            %td= stat.views
+          %tr
+            %td.index Hits
+            %td= stat.hits
+          %tr
+            %td.index CTR
+            %td
+              = stat.hits / stat.views.to_f * 100
+              = '%'
+  %div.grid_9#info Ads 
+  %div.grid_9{:style => 'margin-left:15px;'}
+    - @stats.each do |stat|
+      %div.grid_3
+        %table
+          %tr
+            %td.index Ad 
+            %td= stat.banner.name
+          %tr
+            %td.index Views
+            %td= stat.views
+          %tr
+            %td.index Hits
+            %td= stat.hits
+          %tr
+            %td.index CTR
+            %td
+              = stat.hits / stat.views.to_f * 100
+              = '%'
+#sidebar.omega.grid_3
+  .submenu
+    %h5 aaaa
+  .submenu
+    %h5 aaaa
+  .submenu
+    %h5 aaaa
