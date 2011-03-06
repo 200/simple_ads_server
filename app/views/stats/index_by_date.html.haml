@@ -4,7 +4,7 @@
     %b= @day 
     = link_to 'Next day >>', "/stat/#{@next_day}"  
   %div.grid_9#info Zones and Ads 
-  %div.grid_9{:style => 'margin-left:15px;'}
+  %div.grid_9#zones_ads_stats{:style => 'margin-left:15px;'}
     - @stats.each do |stat|
       %div.grid_3
         %table
@@ -28,7 +28,7 @@
           %tr
             %td.index link to view
   %div.grid_9#info Zones
-  %div.grid_9{:style => 'margin-left:15px;'}
+  %div.grid_9#zones_stats{:style => 'margin-left:15px;'}
     - @stats.each do |stat|
       %div.grid_3
         %table
@@ -47,7 +47,7 @@
               = stat.hits / stat.views.to_f * 100
               = '%'
   %div.grid_9#info Ads 
-  %div.grid_9{:style => 'margin-left:15px;'}
+  %div.grid_9#ads_stats{:style => 'margin-left:15px;'}
     - @stats.each do |stat|
       %div.grid_3
         %table

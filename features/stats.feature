@@ -22,25 +22,25 @@ Feature: Day views
   Scenario: Show pair Zone + Ad stats
     Given I have 1 days stats
     And I am on the day view 
-    Then I should see "Zone-1"
-    And I should see "Ad-1"
-    And I should see "Views 4"
-    And I should see "Hits 2"
-    And I should see "CTR 50.0 %"
-    And I should see "link to view" 
+    Then I should see "Zone-1" within "#zones_ads_stats"
+    And I should see "Ad-1" within "#zones_ads_stats"
+    And I should see "Views 4" within "#zones_ads_stats"
+    And I should see "Hits 2" within "#zones_ads_stats"
+    And I should see "CTR 50.0 %" within "#zones_ads_stats"
+    And I should see "link to view" within "#zones_ads_stats"
 
   Scenario: Show Zone stats
     Given I have 1 days stats
     And I am on the day view 
-    Then I should see "Zone-1"
-    And I should see "Views 4"
-    And I should see "Hits 2"
-    And I should see "CTR 50.0 %"
+    Then I should see "Zone-1" within "#zones_stats"
+    And I should see "Views 4" within "#zones_stats"
+    And I should see "Hits 2" within "#zones_stats"
+    And I should see "CTR 50.0 %" within "#zones_stats"
 
   Scenario: Show Ad stats 
     Given I have 1 days stats
     And I am on the day view 
-    Then I should see "Ad-1"
-    And I should see "Views 4"
-    And I should see "Hits 2"
-    And I should see "CTR 50.0 %"
+    Then I should see "Ad-1" within "#ads_stats"
+    And I should see "Views 4" within "#ads_stats"
+    And I should see "Hits 2" within "#ads_stats"
+    And I should see "CTR 50.0 %" within "#ads_stats"
