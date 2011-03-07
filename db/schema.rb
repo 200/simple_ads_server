@@ -10,6 +10,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110303223128) do
+
+  create_table "banners", :force => true do |t|
+    t.string "name"
+    t.text   "ads_code"
+    t.text   "description"
+  end
+
+  create_table "stats", :force => true do |t|
+    t.integer "views"
+    t.integer "hits"
+    t.date    "day"
+    t.integer "zone_id"
+    t.integer "banner_id"
+  end
+
+  create_table "zones", :force => true do |t|
+    t.string  "name"
+    t.text    "description"
+    t.integer "default_banner_id"
+  end
 
 end

@@ -4,25 +4,29 @@
   color: white;
 }
 
-#vtitle {
+#info {
   text-align: center;
-}
-
-
-table .grid_3 {
-  border: 1px solid brown; 
+  background: brown;
+  color: white;
   border-radius: 8px;
-  padding: 5px 2px 5px 2px;
-  background: #FF7373;
-  min-height: 100px;
-  margin-left: 0;
-}
-
-table .grid_9 {
-  margin-left: 0;
   margin-bottom: 10px;
 }
 
+#info a {
+  text-decoration: none;
+  color: white;
+}
+
+.grid_3 {
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  background: #FF7373;
+  margin-bottom: 20px;
+}
+
+.index {
+  font-weight: bold;
+}
 
 #sidebar {
   border: 2px solid brown;

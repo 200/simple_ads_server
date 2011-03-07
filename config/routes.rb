@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
   get 'test/index'
+
+  match 'stat/:day' => 'stats#index_by_date'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
