@@ -9,4 +9,3 @@ public/assets/*
 nohup.out
 .DS_Store
 *.swp
-*.sqlite3
