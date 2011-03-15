@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '3.0.3'
 
   s.add_dependency 'haml'
+  s.add_dependency 'jquery-rails'
 
   s.add_dependency "rspec-rails"
   s.add_dependency "rspec"
