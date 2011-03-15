@@ -5,4 +5,4 @@ TO GENERATE JQUERY FILES
 HOW TO USE AD HELPER
 =============================
 In your view:
-  <%= display_banner('Zone name', :ad => 'Ad name') # Ad name is optional, without this it will get default zone ad.
+  <%= display_banner('Zone name', :banner => 'Ad name') # Ad name is optional, without this it will get default zone ad.
