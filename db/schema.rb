@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110303223128) do
+ActiveRecord::Schema.define(:version => 20110314175814) do
+
+  create_table "backends", :force => true do |t|
+    t.integer  "zone_id"
+    t.integer  "banner_id"
+    t.integer  "views"
+    t.integer  "hits"
+    t.date     "day"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "banners", :force => true do |t|
     t.string "name"
