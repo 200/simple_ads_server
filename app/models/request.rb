@@ -1,5 +1,8 @@
 class Request < ActiveRecord::Base
 
+  require 'rubygems'
+  require 'redis'
+
   def saveRedisRequest
   	@r = Redis.new
   	@r.KEYS(REQ).each do |req|
