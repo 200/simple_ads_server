@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'test/index'
 
   match 'stat/:day' => 'stats#index_by_date'
+  match 'stat/:zone_id' => 'stats#show_zone'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
