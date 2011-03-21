@@ -20,5 +20,5 @@
 # Learn more: http://github.com/javan/whenever
 
 every 24.hours, :at => '0:05 am' do
-  runner "Request.saveRedisRequest"
+  runner "StatsController.save_redis_request"
 end

@@ -3,7 +3,7 @@ class Request < ActiveRecord::Base
   require 'rubygems'
   require 'redis'
 
-  def saveRedisRequest
+  def save_redis_request
   	@r = Redis.new
   	@r.KEYS(REQ).each do |req|
   		@r.SMEMBERS(req).each do |main_req|
