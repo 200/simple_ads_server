@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  get 'zone/edit'
+  
   get 'test/index'
+  
+  match 'zone/update' => 'zone#update'
 
   match 'stat/:day' => 'stats#index_by_date'
 

@@ -1,0 +1,8 @@
+//fading out the editBox
+jQuery('#editBox').fadeOut();
+
+//showing a notice about update status
+jQuery('#flashBox').html("Status: <%= escape_javascript(@updateStatus) %>");
+
+//rendering table with updated data
+jQuery('div#zoneTable').html('<%= escape_javascript(render :partial => 'zone_table', :locals => {:zones => @zoneUpdated}) %>');

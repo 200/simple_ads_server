@@ -1,0 +1,20 @@
+<table border="3px">
+    <tr>
+        <th>Zone's name</th>
+        <th>Description</th>
+        <th>Default Banner id</th>
+        <th>Action</th>
+    </tr>
+    
+    <% zones.each do |zone| %>
+    <tr>
+        <td id="<%= zone.id%>_name"><%= zone.name %></td>
+        <td id="<%= zone.id%>_desc"><%= zone.description %></td>
+        <td id="<%= zone.id%>_banner_id"><%= zone.default_banner_id%></td>
+        <td>
+        <a href="#" onclick="return showEditBox(<%= zone.id %>);" id="<%= zone.id%>">Edit</a>
+        </td>
+    </tr>
+    <% end %>
+</table>
+

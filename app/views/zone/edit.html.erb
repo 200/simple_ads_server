@@ -1,0 +1,34 @@
+<h1>Zone#edit</h1>
+<div id="editBox" style="display:none;">
+
+    <%= form_tag('/zone/update', :remote => true, :id => "editBoxForm") do %>
+    <b>Zone's name</b>
+    <br />
+    <%= text_field_tag 'name_input' %>
+    <br />
+    <b>Banner ID</b>
+    <br />
+    <%= text_field_tag 'banner_id_input' %>
+    <br />
+    <b>Description</b>
+    <br />
+    <%= text_area_tag 'desc_input' %>
+    <br />
+    <%= hidden_field_tag 'id' %>
+    <%= submit_tag "save", :id => "saveButton"%>
+
+    <% end %>
+</div>
+<div id="flashBox" style="background: green;">
+</div>
+<br>
+<div id="zoneTable">
+	
+
+<!--
+Rendering zone_table partial, with some data from database   
+-->
+<%= render :partial => "zone_table", :locals => { :zones => @zones } %>
+ 
+
+</div>
